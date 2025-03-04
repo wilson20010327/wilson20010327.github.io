@@ -41,6 +41,11 @@
             margin-bottom: 20px;
         }
 
+        .publication-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
         .section h2 {
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
@@ -83,6 +88,18 @@
             display: flex;
             width: 100%;
         }
+
+        .publication {
+            display: flex;
+            align-items: center;
+        }
+
+        .publication img {
+            width: 25%;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -101,14 +118,16 @@
                     development, with experience in full-stack development and machine learning. I am passionate about
                     using technology to solve real-world problems and make a positive impact on society.
                     <br>
-                    <br> Before joining Columbia, I completed my undergraduate degree in Computer Science and
-                    Information Engineering at National Cheng Kung University, Taiwan, where I was advised by Profoessor
-                    <a href="https://www.csie.ncku.edu.tw/zh-hant/members/1" target="_blank">Yeim-Kuan Chang</a> on
-                    capstone project. After graduated, I was involved in
-                    research project in <a href="https://www.dcnlab.csie.ncku.edu.tw/index.html"
-                        target="_blank">DCNLab</a> for a year,
-                    where I was advised by Profoessor <a href="https://www.csie.ncku.edu.tw/zh-hant/members/26"
-                        target="_blank">Chuan-Ching Sue</a>.
+                    <br> Before joining Columbia, I earned my undergraduate degree in Computer Science and
+                    Information Engineering from National Cheng Kung University, Taiwan. For my capstone project, I was
+                    advised by
+                    <a href="https://www.csie.ncku.edu.tw/zh-hant/members/1" target="_blank">Professor Yeim-Kuan
+                        Chang</a>.
+                    After graduating, I spent a year conducting research at
+                    <a href="https://www.dcnlab.csie.ncku.edu.tw/index.html" target="_blank">DCNLab</a>,
+                    where I was advised by
+                    <a href="https://www.csie.ncku.edu.tw/zh-hant/members/26" target="_blank">Professor Chuan-Ching
+                        Sue</a>.
 
                 </p>
 
@@ -119,8 +138,8 @@
                     </strong> Robotics, Machine Learning</p>
                 <p>🌐 <strong>Location:</strong> New York, NY</p>
                 <p><a href="https://linkedin.com/in/hua-hsuan-liang" target="_blank">🔗LinkedIn</a></p>
-                <p class="link"> <a href="https://github.com/wilson20010327" target="_blank">💻GitHub</a> </p>
-                <p class="link"><a href="">🇺🇲(+1) 646-713-8679 </a></p>
+                <p> <a href="https://github.com/wilson20010327" target="_blank">💻GitHub</a> </p>
+                <p><a href="">🇺🇲(+1) 646-713-8679 </a></p>
                 <p><a href="">🇹🇼(+886) 978-520-664</a></p>
                 <p><a href="mailto:hl3811@columbia.edu">📧hl3811@columbia.edu</a></p>
                 <p>
@@ -129,49 +148,43 @@
                 </p>
             </div>
         </header>
-
         <div class="section">
-            <h2>Education</h2>
-            <p><strong>Columbia University</strong> (Aug. 2024 – Dec. 2025) - MS in Computer Science, New York, NY</p>
-            <p><strong>National Cheng Kung University</strong> (Sep. 2019 – Jun. 2023) - BS in CS & IE, Tainan, TW</p>
-        </div>
-
-        <div class="section">
-            <h2>Experience</h2>
+            <h2>Updates</h2>
             <ul>
-                <li><strong>Research Student</strong> (Sep. 2024 – Present) - Columbia University, ROAM Lab</li>
-                <li><strong>Research Assistant</strong> (Sep. 2023 – Jun. 2024) - National Cheng Kung University</li>
-                <li><strong>Equipment Intelligence Engineering Intern</strong> (Jul. 2023 – Aug. 2023) - Lam Research
-                </li>
+                <li style="color: gray;">[Sept 2024] I joined Columbia University, ROAM Lab as a research student.</li>
+                <li style="color: gray;">[Sept 2023] I started my Reserarch Assistant one year journey at DCNLab.</li>
+                <li style="color: gray;">[July 2023] I started my summer internship as a Equipment Intellegence intern
+                    at Lam Research TW.</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>Publications</h2>
-            <p><strong>VibeCheck: Using Active Acoustic Tactile Sensing for Contact-Rich Manipulation</strong></p>
-            <p>IEEE/RSJ IROS 2025 (Under Review)</p>
+            <div class="publication">
+                <img src="./personal_data/vibecheck.png" alt="Publication Image">
+                <div>
+                    <p><strong>VibeCheck: Using Active Acoustic Tactile Sensing for Contact-Rich Manipulation</strong>
+                    </p>
+                    <p style="font-size: smaller;">Do-Gon Kim*, Kaidi Zhang*, Hua-Hsuan Liang, Eric T Chang, Zhanpeng
+                        He, Ioannis Kymissis, Matei Ciocarlie</p>
+                    <p style="font-size: smaller; color: darkgray;"> Under Review</p>
+                </div>
+            </div>
         </div>
-
+        
         <div class="section">
-            <h2>Projects</h2>
+            <h2>Software</h2>
             <ul>
+                <li><strong><a href="https://official.ainimal.io/">Ainimal</a></strong> - Full-stack mobile app with AI-powered dating app (Node.js, React
+                    Native, MongoDB, Docker)</li>
                 <li><strong>Newsbie</strong> - Full-stack mobile app with AI-powered news summarization (Flask, React
                     Native, MongoDB, Docker)</li>
             </ul>
         </div>
-
         <div class="section">
-            <h2>Extracurricular Activities</h2>
-            <p>Graduation Ceremony Deputy Chairperson (2022-2023) - National Cheng Kung University</p>
-        </div>
-
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <p><strong>OS:</strong> Windows, Ubuntu</p>
-            <p><strong>Languages:</strong> Java, Python, C/C++, JavaScript, HTML, CSS</p>
-            <p><strong>Developer Tools:</strong> PyTorch, Linux, Git, Docker, Kubernetes, Docker Swarm, VS Code, Bash,
-                Vim</p>
-            <p><strong>Libraries:</strong> Pandas, NumPy, Flask, Matplotlib, Expo, React Native, ROS2</p>
+            <h2>Awards</h2>
+            <ul>
+                <li><strong>Taipei Metro 2024 Hackathon</strong> - Second Place Award & Best Creative Award</li>
+            </ul>
         </div>
     </div>
 </body>
