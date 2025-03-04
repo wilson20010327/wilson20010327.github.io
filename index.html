@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            padding: 20px;
+            margin: 20px;
+            padding: 10px;
             background-color: #f4f4f4;
         }
 
@@ -25,7 +25,6 @@
         h1,
         h2 {
             color: #333;
-            width: 100%;
         }
 
         a {
@@ -39,11 +38,6 @@
 
         .section {
             margin-bottom: 20px;
-        }
-
-        .publication-section h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
         }
 
         .section h2 {
@@ -62,43 +56,61 @@
 
         .header {
             display: flex;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            align-items: center;
             justify-content: space-between;
+        }
+
+        .instruction-block {
+            flex: 1;
+            min-width: 280px;
         }
 
         .header img {
             border-radius: 50%;
             width: 100%;
-            max-width: 300px;
+            max-width: 200px;
             height: auto;
             min-width: 80px;
         }
 
-        .instruction-block {
-            max-width: 500px;
-            margin-right: 5px;
-        }
-
-        .header p {
-            line-height: 1.6;
-            font-size: 100%;
-        }
-
-        .link {
-            display: flex;
-            width: 100%;
-        }
-
         .publication {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
         }
 
         .publication img {
-            width: 25%;
+            width: 100%;
+            max-width: 200px;
             height: auto;
             margin-right: 15px;
             border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .instruction-block {
+                text-align: left;
+            }
+
+            .publication {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .publication img {
+                margin-bottom: 10px;
+            }
+
+            .header img {
+                max-width: 150px;
+            }
         }
     </style>
 </head>
@@ -106,57 +118,35 @@
 <body>
     <div class="container">
         <header class="header">
-
             <div class="instruction-block">
                 <h1>Hua-Hsuan Liang</h1>
-
-                <p>I'm currently a MS student @ Columbia, working in the <a href="https://roam.me.columbia.edu/"
+                <p>I'm currently an MS student @ Columbia, working in the <a href="https://roam.me.columbia.edu/"
                         target="_blank">ROAM Lab</a> as a research student, mentored by <a
-                        href="https://zhanpenghe.github.io/" target="_blank">Zhanpeng He</a>. My research forcuses on
-                    robotics,
-                    and machine learning. special in reinforcement learning. I have a strong background in software
-                    development, with experience in full-stack development and machine learning. I am passionate about
-                    using technology to solve real-world problems and make a positive impact on society.
-                    <br>
-                    <br> Before joining Columbia, I earned my undergraduate degree in Computer Science and
-                    Information Engineering from National Cheng Kung University, Taiwan. For my capstone project, I was
-                    advised by
-                    <a href="https://www.csie.ncku.edu.tw/zh-hant/members/1" target="_blank">Professor Yeim-Kuan
-                        Chang</a>.
-                    After graduating, I spent a year conducting research at
-                    <a href="https://www.dcnlab.csie.ncku.edu.tw/index.html" target="_blank">DCNLab</a>,
-                    where I was advised by
-                    <a href="https://www.csie.ncku.edu.tw/zh-hant/members/26" target="_blank">Professor Chuan-Ching
-                        Sue</a>.
-
-                </p>
-
+                        href="https://zhanpenghe.github.io/" target="_blank">Zhanpeng He</a>. My research focuses on
+                    robotics and machine learning, especially reinforcement learning.</p>
+                <p>Before joining Columbia, I earned my undergraduate degree in Computer Science and Information
+                    Engineering from National Cheng Kung University, Taiwan.</p>
             </div>
             <div>
                 <img src="./personal_data/profile.jpg" alt="Hua-Hsuan Liang">
-                <p>👨‍💻 <strong>Research Interests:<br>
-                    </strong> Robotics, Machine Learning</p>
-                <p>🌐 <strong>Location:</strong> New York, NY</p>
-                <p><a href="https://linkedin.com/in/hua-hsuan-liang" target="_blank">🔗LinkedIn</a></p>
-                <p> <a href="https://github.com/wilson20010327" target="_blank">💻GitHub</a> </p>
-                <p><a href="">🇺🇲(+1) 646-713-8679 </a></p>
-                <p><a href="">🇹🇼(+886) 978-520-664</a></p>
-                <p><a href="mailto:hl3811@columbia.edu">📧hl3811@columbia.edu</a></p>
-                <p>
-                    <a href="./personal_data/Resume2025-03-03.pdf" download="./personal_data/Resume2025-03-03.pdf"> 📄
-                        CV</a>
-                </p>
+                <p><strong>Research Interests:</strong> Robotics, Machine Learning</p>
+                <p><strong>Location:</strong> New York, NY</p>
+                <p><a href="https://linkedin.com/in/hua-hsuan-liang" target="_blank">🔗 LinkedIn</a></p>
+                <p><a href="https://github.com/wilson20010327" target="_blank">💻 GitHub</a></p>
+                <p><a href="mailto:hl3811@columbia.edu">📧 Email</a></p>
+                <p><a href="./personal_data/Resume2025-03-03.pdf" download>📄 CV</a></p>
             </div>
         </header>
+
         <div class="section">
             <h2>Updates</h2>
             <ul>
-                <li style="color: gray;">[Sept 2024] I joined Columbia University, ROAM Lab as a research student.</li>
-                <li style="color: gray;">[Sept 2023] I started my Reserarch Assistant one year journey at DCNLab.</li>
-                <li style="color: gray;">[July 2023] I started my summer internship as a Equipment Intellegence intern
-                    at Lam Research TW.</li>
+                <li>[Sept 2024] Joined Columbia University, ROAM Lab as a research student.</li>
+                <li>[Sept 2023] Started as a Research Assistant at DCNLab.</li>
+                <li>[July 2023] Interned as an Equipment Intelligence Intern at Lam Research TW.</li>
             </ul>
         </div>
+
         <div class="section">
             <h2>Publications</h2>
             <div class="publication">
@@ -166,7 +156,7 @@
                     </p>
                     <p style="font-size: smaller;">Do-Gon Kim*, Kaidi Zhang*, Hua-Hsuan Liang, Eric T Chang, Zhanpeng
                         He, Ioannis Kymissis, Matei Ciocarlie</p>
-                    <p style="font-size: smaller; color: darkgray;"> Under Review</p>
+                    <p style="font-size: smaller; color: darkgray;">Under Review</p>
                 </div>
             </div>
         </div>
@@ -174,16 +164,15 @@
         <div class="section">
             <h2>Software</h2>
             <ul>
-                <li><strong><a href="https://official.ainimal.io/">Ainimal</a></strong> - Full-stack mobile app with
-                    AI-powered dating app (Node.js, React Native, MongoDB, Docker)</li>
-                <li><strong><a href="https://youtu.be/Knizll__Jsk?si=KyH7GQ094sLdp43G">Newsbie</a></strong> - Full-stack
-                    mobile app with AI-powered news summarization (Flask, React
-                    Native, MongoDB, Docker)</li>
-                <li><strong><a href="https://youtu.be/t9eveYLJWcg?si=vtiGunAMIzlXHiXO">Newsbie</a></strong> - Full-stack
-                    mobile app with AI-powered news summarization (Flask, React
-                    Native, MongoDB, Docker)</li>
+                <li><strong><a href="https://official.ainimal.io/">Ainimal</a></strong> - AI-powered dating app (Node.js,
+                    React Native, MongoDB, Docker)</li>
+                <li><strong><a href="https://youtu.be/Knizll__Jsk?si=KyH7GQ094sLdp43G">Newsbie</a></strong> - AI-powered
+                    news summarization app (Flask, React Native, MongoDB, Docker)</li>
+                <li><strong><a href="https://youtu.be/t9eveYLJWcg?si=vtiGunAMIzlXHiXO">DESIARY</a></strong> - AI-powered
+                    diary-to-picture app (Flask, React Native, MongoDB, Docker)</li>
             </ul>
         </div>
+
         <div class="section">
             <h2>Awards</h2>
             <ul>
